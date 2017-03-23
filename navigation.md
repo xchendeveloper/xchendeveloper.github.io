@@ -4,7 +4,7 @@
 
   * # centos 7
   * [切换软件源](articles/server/centos7/changeSoftSource.md)
-  * [SubMenu Item 2](subitem2.md)
+  * [防火墙](articles/server/centos7/firewall.md)
   - - - -
   * # SubMenu Heading 2
   * [SubMenu Item 3](subitem3.md)
