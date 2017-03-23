@@ -30,9 +30,9 @@ rpm -ivh mysql-community-server-5.7.17-1.el7.x86_64.rpm
 ```
 
 2. 设置密码
-```bash
+``` 
 vi /etc/my.cnf
-[mysqld]之后添加 skip-grant-tables  #使用无授权登录
+[mysqld]之后添加 skip-grant-tables  使用无授权登录
 service mysqld start
 mysql -u root
 update mysql.user set authentication_string=passWord('<设置的密码>') where user='root' ;
@@ -45,7 +45,7 @@ vi /etc/my.cnf
 service mysqld start
 mysql -u root -p <设置的密码>
 
-这是因为刚开始设置了skip-grant-tables,所以这里系统会强制让我们改密码，执行以下三步：
+<!-- 这是因为刚开始设置了skip-grant-tables,所以这里系统会强制让我们改密码，执行以下三步 -->
 step 1: SET PASSWORD = PASSWORD('your new password');
 step 2: ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
 step 3: flush privileges;
