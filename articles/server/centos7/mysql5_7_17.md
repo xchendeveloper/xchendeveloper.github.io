@@ -53,7 +53,7 @@ step 3: flush privileges;
 
 ## 设置远程连接
 
-```bash
+```
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youpassword' WITH GRANT OPTION;
 ```
 
