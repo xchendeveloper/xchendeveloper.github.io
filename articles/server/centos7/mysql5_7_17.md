@@ -41,11 +41,12 @@ service mysqld start
 mysql -u root
 ```
 - 更新root密码
-```mysql
+```
 update mysql.user set authentication_string=passWord('your password') where user='root' ;
 flush PRivileges;
 exit;
 ```
+
 - 删除skip-grant-tables，去除无授权登录
 ```bash
 service mysqld stop
@@ -57,14 +58,12 @@ service mysqld start
 mysql -u root -p 'your password'
 ```
 
-
 - 这是因为刚开始设置了skip-grant-tables,所以这里系统会强制让我们改密码，执行以下三步
 ```bash
 SET PASSWORD = PASSWORD('your new password');
 ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
 flush privileges;
 ```
-
 
 ## 设置远程连接
 
