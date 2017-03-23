@@ -30,26 +30,41 @@ rpm -ivh mysql-community-server-5.7.17-1.el7.x86_64.rpm
 ```
 
 2. 设置密码
-``` 
+- 在 /etc/my.cnf 文件的[ mysqld ] 之后添加 skip-grant-tables  使用无授权登录
+```
 vi /etc/my.cnf
-[mysqld]之后添加 skip-grant-tables  使用无授权登录
+```
+
+- 启动mysql
+```bash
 service mysqld start
 mysql -u root
-update mysql.user set authentication_string=passWord('<设置的密码>') where user='root' ;
+```
+- 更新root密码
+```mysql
+update mysql.user set authentication_string=passWord('your password') where user='root' ;
 flush PRivileges;
 exit;
-
+```
+- 删除skip-grant-tables，去除无授权登录
+```bash
 service mysqld stop
 vi /etc/my.cnf
-删除skip-grant-tables
-service mysqld start
-mysql -u root -p <设置的密码>
-
-<!-- 这是因为刚开始设置了skip-grant-tables,所以这里系统会强制让我们改密码，执行以下三步 -->
-step 1: SET PASSWORD = PASSWORD('your new password');
-step 2: ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
-step 3: flush privileges;
 ```
+- 启动mysql服务
+```bash
+service mysqld start
+mysql -u root -p 'your password'
+```
+
+
+- 这是因为刚开始设置了skip-grant-tables,所以这里系统会强制让我们改密码，执行以下三步
+```bash
+SET PASSWORD = PASSWORD('your new password');
+ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
+flush privileges;
+```
+
 
 ## 设置远程连接
 
