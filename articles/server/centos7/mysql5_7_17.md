@@ -20,7 +20,7 @@ rpm -e --nodeps mariadb-libs-5.5.44-2.el7.centos.x86_64
 
 ## 安装MySQL
 1. 按顺序执行
-```mysql
+```bash
 rpm -ivh mysql-community-common-5.7.17-1.el7.x86_64.rpm  
 rpm -ivh mysql-community-libs-5.7.17-1.el7.x86_64.rpm  
 rpm -ivh mysql-community-client-5.7.17-1.el7.x86_64.rpm  
@@ -28,7 +28,7 @@ rpm -ivh mysql-community-server-5.7.17-1.el7.x86_64.rpm
 ```
 
 2. 设置密码
-```mysql
+```bash
 vi /etc/my.cnf
 [mysqld]之后添加 skip-grant-tables  #使用无授权登录
 service mysqld start
@@ -51,7 +51,7 @@ step 3: flush privileges;
 
 ## 设置远程连接
 
-```mysql
+```bash
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youpassword' WITH GRANT OPTION;
 ```
 
