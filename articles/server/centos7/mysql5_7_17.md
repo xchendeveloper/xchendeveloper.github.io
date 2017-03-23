@@ -1,6 +1,7 @@
 # centos 7 下 mysql-5.7.17 安装
 
 ## 准备工作
+
 1. 软件下载
 
 在MySQL官网下载 mysql-5.7.17-1.el7.x86_64.rpm-bundle.tar
@@ -19,6 +20,7 @@ rpm -e --nodeps mariadb-libs-5.5.44-2.el7.centos.x86_64
 ```
 
 ## 安装MySQL
+
 1. 按顺序执行
 ```bash
 rpm -ivh mysql-community-common-5.7.17-1.el7.x86_64.rpm  
