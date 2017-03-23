@@ -3,7 +3,6 @@
 ## 准备工作
 
 1. 软件下载
-
 在MySQL官网下载 mysql-5.7.17-1.el7.x86_64.rpm-bundle.tar
 
 2. 解压
@@ -30,6 +29,7 @@ rpm -ivh mysql-community-server-5.7.17-1.el7.x86_64.rpm
 ```
 
 2. 设置密码
+
 - 在 /etc/my.cnf 文件的[ mysqld ] 之后添加 skip-grant-tables  使用无授权登录
 ```
 vi /etc/my.cnf
