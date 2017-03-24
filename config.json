@@ -1,6 +1,7 @@
 {
-  "useSideMenu": true,
-  "lineBreaks": "gfm",
-  "additionalFooterText": "All content and images &copy; by chenxing",
-  "anchorCharacter": "#"
+    "name": "xchen's wiki",
+    "ver": "0.1",
+    "logo": "",
+    "colour": "",
+    "github-url": ""
 }
