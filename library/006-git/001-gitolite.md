@@ -7,10 +7,10 @@
 1. [开发人员下载仓库](#开发人员下载仓库 "开发人员下载仓库")
 
 
-轻量级git服务器程序，解决了git权限管理的问题。（git是一个分布式版本控制系统，就是说每个人作为客户端的同时又是服务器）
-项目GitHub地址：https://github.com/sitaramc/gitolite
-项目官方文档：http://gitolite.com/gitolite/
-当前环境：centos 7
+轻量级git服务器程序，解决了git权限管理的问题。
+- 项目GitHub地址：https://github.com/sitaramc/gitolite
+- 项目官方文档：http://gitolite.com/gitolite/
+- 当前环境：centos 7
 
 ## 安装前准备
 - 在客户端机器安装git,并生成秘钥
