@@ -46,3 +46,4 @@
 ##### fastDFS
 - [fastDFS安装](?file=010-fastDFS/001-fastDFS安装 "fastDFS安装")
 - [tracker.config配置](?file=010-fastDFS/002-tracker.config配置 "tracker.config配置")
+- [storage.config配置](?file=010-fastDFS/003-storage.config配置 "storage.config配置")

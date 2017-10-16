@@ -229,4 +229,6 @@ rotate_error_log_size = 0 ，error log按大小轮转。
 http.disabled=false ，HTTP服务是否不生效<br>
 http.server_port=8080 ， HTTP服务端口<br>
 关于http的设置，默认编译是不生效的 要求更改 #WITH_HTTPD=1 将 注释#去掉 再编译<br>
-关于http的应用 说实话 不是很了解 没有见到 相关说明 ,望 版主可以完善一下 以下是字面解释了
+关于http的应用 说实话 不是很了解 没有见到 相关说明<br>
+use "#include" directive to include http other settiongs<br>
+include http.conf 如果加载http.conf的配置文件
