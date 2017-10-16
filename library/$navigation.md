@@ -42,3 +42,7 @@
     - [子流程和调用活动](?file=009-activiti/001-bpmn2.0规范/006-子流程和调用活动 "子流程和调用活动")
     - [边界和中间事件](?file=009-activiti/001-bpmn2.0规范/007-边界和中间事件 "边界和中间事件")
     - [监听器](?file=009-activiti/001-bpmn2.0规范/008-监听器 "监听器")
+
+##### fastDFS
+- [fastDFS安装](?file=010-fastDFS/001-fastDFS安装 "fastDFS安装")
+- [tracker.config配置](?file=010-fastDFS/002-tracker.config配置 "tracker.config配置")
